@@ -173,6 +173,21 @@ textarea.form-control {
 }
 // scss-lint:enable QualifyingElement
 
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: $white;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%280, 0, 0%29'></polygon></svg>");
+  background-position: center right 10px;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  border-radius: 0;
+  // Fix the height for Firefox
+  height: 38px;
+  padding-right: 30px;
+}
+
 
 // 6. Form control widths
 // ==========================================================================
