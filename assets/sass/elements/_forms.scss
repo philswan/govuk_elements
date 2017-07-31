@@ -137,6 +137,7 @@ legend {
   // setting any background-color makes text invisible when changing colours to dark backgrounds in Firefox (https://bugzilla.mozilla.org/show_bug.cgi?id=1335476)
   // as background-color and color need to always be set together, color should not be set either
   border: 2px solid $text-colour;
+  height: 2em;
   padding: 5px 4px 4px;
   width: 100%;
 
@@ -161,6 +162,7 @@ textarea.form-control {
   background-image: none;
   // Remove margin under textarea in Chrome and FF
   display: block;
+  height: auto;
   // Disable opacity and background image for Firefox
   opacity: 1;
 }
@@ -175,8 +177,6 @@ select.form-control {
   background-repeat: no-repeat;
   background-size: 10px;
   border-radius: 0;
-  // Fix the height for Firefox
-  height: 38px;
   padding-right: 30px;
 
   // Removed fixed height and background when multiple select
