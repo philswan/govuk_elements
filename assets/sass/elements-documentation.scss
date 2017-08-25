@@ -93,7 +93,6 @@ main > .heading-xlarge {
 .example {
   @extend %contain-floats;
   position: relative;
-  overflow: hidden;
   border: 1px solid $grey-2;
   margin-top: $gutter-half;
   margin-bottom: $gutter-half;
@@ -114,13 +113,13 @@ main > .heading-xlarge {
     content: "EXAMPLE";
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -1px;
+    left: -1px;
 
     padding: em(4) em(15) em(4) em(15);
 
     @include core-14;
-    background: $grey-2;
+    background: $grey-1;
     color: white;
   }
 
